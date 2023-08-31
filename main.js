@@ -37,7 +37,7 @@ function calcularCuotas() {
 
   if (opcion.toUpperCase() == "SI") {
     let cuotas = parseInt(
-      prompt("Cantidad de cuotas: puedes elegir entre 1, 3, 6 o 12")
+      prompt("Podes elegir entre 1, 3, 6 o 12")
     );
 
     while (cuotas !== 1 && cuotas !== 3 && cuotas !== 6 && cuotas !== 12) {
