@@ -36,9 +36,7 @@ function calcularCuotas() {
   );
 
   if (opcion.toUpperCase() == "SI") {
-    let cuotas = parseInt(
-      prompt("Podes elegir entre 1, 3, 6 o 12")
-    );
+    let cuotas = parseInt(prompt("Podes elegir entre 1, 3, 6 o 12"));
 
     while (cuotas !== 1 && cuotas !== 3 && cuotas !== 6 && cuotas !== 12) {
       alert("Las opciones de cuotas son: 1, 3, 6 o 12");
@@ -55,7 +53,7 @@ function importeCuotas(resultado, cuotas) {
   let importeCuota = resultado / cuotas;
   let decimales = importeCuota.toFixed(2);
   alert(`Vas a pagar ${cuotas} cuotas de: $${decimales}`);
-   alert("Gracias por usar nuestra Aplicacion.");
+  alert("Gracias por usar nuestra Aplicacion.");
 }
 
 calcularCuotas();
